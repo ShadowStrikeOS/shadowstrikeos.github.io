@@ -2,30 +2,41 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShadowStrikeOS: The Platform</title>
 <style>
-body{margin:0;background:#10151a;color:#E8EEF2;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
-.term{background:#0a0e12;border-bottom:2px solid #57C7D4;padding:12px 22px;font-size:13px;color:#9fb3bd}
-.term b{color:#57C7D4;font-weight:normal}
-.hero{padding:64px 22px 40px;max-width:980px;margin:0 auto}
-.hero .sys{color:#57C7D4;letter-spacing:5px;font-size:13px}
-.hero h1{font-size:52px;margin:12px 0 8px;letter-spacing:2px}
-.hero p{font-size:17px;line-height:1.7;max-width:720px;color:#c4d2da}
-.band{border-top:1px solid #26313a;padding:36px 22px}
+body{margin:0;background:#0A0A0B;color:#DDE3E6;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+.term{background:#060607;border-bottom:1px solid #26262B;padding:12px 22px;font-size:12.5px;color:#8B949B}
+.term b{color:#7FB6BF;font-weight:normal}
+.hero{padding:60px 22px 34px;max-width:980px;margin:0 auto}
+.hero .sys{color:#7FB6BF;letter-spacing:5px;font-size:12px}
+.hero h1{font-size:50px;margin:12px 0 8px;letter-spacing:2px;font-weight:normal}
+.hero p{font-size:16px;line-height:1.7;max-width:700px;color:#B9C2C8}
+.band{border-top:1px solid #1E1E22;padding:34px 22px}
 .band .in{max-width:980px;margin:0 auto}
-h2{font-size:15px;letter-spacing:4px;color:#57C7D4;font-weight:normal}
-p{line-height:1.75;font-size:15.5px}
+h2{font-size:13px;letter-spacing:4px;color:#7FB6BF;font-weight:normal}
+p{line-height:1.75;font-size:15px}
 .mods{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
-.mod{border:1px solid #26313a;padding:18px;background:#131a20}
-.mod h3{margin:0 0 8px;font-size:16px;font-weight:normal;color:#E7C65B}
-.mod a{color:#57C7D4;text-decoration:none}
+.mod{border:1px solid #26262B;padding:18px;background:#0E0E10}
+.mod h3{margin:0 0 8px;font-size:15px;font-weight:normal;color:#E3C565}
+.mod a{color:#7FB6BF;text-decoration:none}
+a{color:#7FB6BF}
+footer{padding:24px 22px;color:#666E75;font-size:12px;border-top:1px solid #1E1E22}
+
+.redact{margin:22px 0}.redact span{display:inline-block;height:10px;background:#1B1B1E;margin-right:8px;vertical-align:middle}
+.redact span.tick{background:#C9A227;height:10px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border:1px solid #26262B;margin:26px 0}
+.cell{padding:16px;border-right:1px solid #26262B}.cell:last-child{border-right:none}
+.cell .n{font-size:28px;color:#E3C565}.cell .l{font-size:11.5px;letter-spacing:1.6px;color:#9A958A;line-height:1.55}
 .wall{display:flex;flex-wrap:wrap;gap:10px}
-.wall-h{letter-spacing:3px;color:#E7C65B;font-size:13px;margin:24px 0 4px;font-weight:normal}
+.wall-h{letter-spacing:3px;color:#E3C565;font-size:14px;margin:26px 0 4px;font-weight:normal}
 figure.badge{margin:0;text-align:center;width:168px}
-figure.badge figcaption{font-size:11px;color:#9fb3bd;line-height:1.5;padding:0 6px}
-footer{padding:26px 22px;color:#71828c;font-size:12.5px;border-top:1px solid #26313a}
+figure.badge figcaption{font-size:11px;color:#9A958A;line-height:1.5;padding:0 6px}
+
 </style></head><body>
 <div class="term"><b>shadowstrike@os</b>:~$ ./identity --print &nbsp;|&nbsp; platform org of the Epsilon0xCell fleet</div>
 <div class="hero"><div class="sys">SYSTEM / PLATFORM</div><h1>SHADOWSTRIKE OS</h1>
-<p>A custom security-focused Linux distribution for penetration testing and security research. This organization is its home: the platform project, its releases, and its record.</p></div>
+<p>A custom security-focused Linux distribution for penetration testing and security research. This organization is its home.</p>
+<div class="redact" aria-hidden="true"><span style="width:150px"></span><span style="width:84px"></span><span style="width:190px"></span><span class="tick" style="width:26px"></span></div>
+<div class="strip"><div class="cell"><div class="n">1</div><div class="l">PLATFORM, ITS HOME HERE</div></div><div class="cell"><div class="n">757</div><div class="l">REPOSITORIES IN THE FLEET</div></div><div class="cell"><div class="n">754</div><div class="l">AUDITED LINE BY LINE</div></div><div class="cell"><div class="n">0</div><div class="l">LIVE SECRETS FOUND</div></div></div>
+</div>
 <div class="band"><div class="in"><h2>MODULES</h2><div class="mods">
 <div class="mod"><h3>01 / THE DISTRIBUTION</h3><p>The operating system itself: build, configuration, and documentation.</p><a href="https://github.com/ShadowStrikeOS/ShadowStrike-OS">github.com/ShadowStrikeOS/ShadowStrike-OS</a></div>
 <div class="mod"><h3>02 / THE LIBRARY</h3><p>The 584-project tooling library the platform draws from.</p><a href="https://shadowguard-ai.github.io/">shadowguard-ai.github.io</a></div>
@@ -35,7 +46,8 @@ footer{padding:26px 22px;color:#71828c;font-size:12.5px;border-top:1px solid #26
 <p>I am Gavin K. I publish as Epsilon0xCell. Everything on this page is part of a public record, and every claim on it can be checked.</p>
 <p>ShadowStrike OS is my platform work: one system, shaped for security research, documented like everything else I ship.</p></div></div>
 <div class="band"><div class="in"><h2>THE WALL</h2>
-<h3 class="wall-h">The Elite Row</h3><div class="wall elite"><figure class="badge"><img src="assets/badges/nsa-codebreaker.svg" width="168" alt="NSA Codebreaker Challenge: Finisher, Solo Entrant"><figcaption>NSA Codebreaker Challenge: Finisher, Solo Entrant</figcaption></figure><figure class="badge"><img src="assets/badges/fbi-team.svg" width="168" alt="FBI TEAM Program Alumnus"><figcaption>FBI TEAM Program Alumnus</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gsec.svg" width="168" alt="SANS GIAC: GSEC Certified"><figcaption>SANS GIAC: GSEC Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gfact.svg" width="168" alt="SANS GIAC: GFACT Certified"><figcaption>SANS GIAC: GFACT Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-advisory.svg" width="168" alt="GIAC Advisory Board"><figcaption>GIAC Advisory Board</figcaption></figure></div><h3 class="wall-h">The Record</h3><div class="wall"><figure class="badge"><img src="assets/badges/cyber-scholar.svg" width="168" alt="National Cyber Scholar with Honors"><figcaption>National Cyber Scholar with Honors</figcaption></figure><figure class="badge"><img src="assets/badges/cyberstart.svg" width="168" alt="CyberStart America"><figcaption>CyberStart America</figcaption></figure><figure class="badge"><img src="assets/badges/fleet-757.svg" width="168" alt="757 Repositories"><figcaption>757 Repositories</figcaption></figure></div>
+<h3 class="wall-h">The Elite Row</h3><div class="wall"><figure class="badge"><img src="assets/badges/nsa-codebreaker.svg" width="168" alt="NSA Codebreaker Challenge: Finisher, Solo Entrant"><figcaption>NSA Codebreaker Challenge: Finisher, Solo Entrant</figcaption></figure><figure class="badge"><img src="assets/badges/fbi-team.svg" width="168" alt="FBI TEAM Program Alumnus"><figcaption>FBI TEAM Program Alumnus</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gsec.svg" width="168" alt="SANS GIAC: GSEC Certified"><figcaption>SANS GIAC: GSEC Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-gfact.svg" width="168" alt="SANS GIAC: GFACT Certified"><figcaption>SANS GIAC: GFACT Certified</figcaption></figure><figure class="badge"><img src="assets/badges/giac-advisory.svg" width="168" alt="GIAC Advisory Board"><figcaption>GIAC Advisory Board</figcaption></figure></div>
+<h3 class="wall-h">The Record</h3><div class="wall"><figure class="badge"><img src="assets/badges/cyber-scholar.svg" width="168" alt="National Cyber Scholar with Honors"><figcaption>National Cyber Scholar with Honors</figcaption></figure><figure class="badge"><img src="assets/badges/cyberstart.svg" width="168" alt="CyberStart America"><figcaption>CyberStart America</figcaption></figure><figure class="badge"><img src="assets/badges/fleet-757.svg" width="168" alt="757 Repositories"><figcaption>757 Repositories</figcaption></figure></div>
 </div></div>
-<footer>ShadowStrikeOS. Fleet total: 757 repositories. Every claim on this page can be checked against the public record.</footer>
+<footer>ShadowStrikeOS. Every claim on this page can be checked against the public record.</footer>
 </body></html>
